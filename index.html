@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: rgb(18, 20, 17);
+            color: ghostwhite;
+
+        }
+
+        h1 {
+            font-family: Open Sans, Arial;
+            font-size: 480%;
+            text-align: center;
+
+            /*text-align: center;*/
+            /* transform: translateX(-50%) translateY(-50%)*/
+        }
+
+
+        p {
+            width: 900px;
+            margin: 0 auto;
+            font-size: 17px;
+            text-align: center;
+            font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 700;
+            letter-spacing: 2px;
+            line-height: 1.5;
+            margin-bottom: 50px;
+
+        }
+
+        button {
+            padding: 10px;
+            border-radius: 10%;
+            color: white;
+            border: none;
+            width: 190px;
+            margin-top: 50px;
+            position: relative;
+            left: 700px;
+            background-color: navy;
+
+        }
+
+        div.gallery {
+            margin: 5px;
+            border: 1px solid #ccc;
+            float: left;
+            width: 350px;
+
+
+        }
+
+        div.gallery:hover {
+            border: 1px solid #777;
+            color: red;
+            text-transform: lowercase;
+            letter-spacing: 6px;
+            overflow: hidden;
+
+        }
+
+        div.gallery img {
+            width: 100%;
+            height: 250px;
+            transition: .2s;
+        }
+
+        div.desc {
+            padding: 15px;
+            text-align: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: 600;
+        }
+
+        div.desc:hover {
+            background: #000;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <h1>
+        <span>T</span>
+        <span>H</span>
+        <span>E</span>
+        <span>G</span>
+        <span>L</span>
+        <span>I</span>
+        <span>M</span>
+        <span>M</span>
+        <span>E</span>
+        <span>R</span>
+        <span>S</span>
+        <span>O</span>
+        <span>F</span>
+        <span>H</span>
+        <span>O</span>
+        <span>P</span>
+        <span>E</span>
+    </h1>
+    <p>Sometimes we must undergo hardships, breakups, and narcissistic wounds, which shatter the flattering image that we had
+        of ourselves, in order to discover two truths: that we are not who we thought we were; and that the loss of a cherished
+        pleasure is not necessarily the loss of true happiness and well-being. (109)” “You normally have to be bashed about
+        a bit by life to see the point of daffodils, sunsets and uneventful nice days.” “Times of great calamity and confusion
+        have been productive for the greatest minds. The purest ore is produced from the hottest furnace. The brightest thunder-bolt
+        is elicited from the darkest storm.”
+    </p>
+
+
+    <div class="gallery">
+        <a href="">
+            <img src="/images/1.jpg" alt="first">
+        </a>
+        <div class="desc">DESPAIR</div>
+    </div>
+
+    <div class="gallery">
+        <a href="">
+            <img src="/images/2.jpg" alt="">
+        </a>
+        <div class="desc">AGONY</div>
+    </div>
+
+    <div class="gallery">
+        <a href="">
+            <img src="/images/3.jpg" alt="">
+        </a>
+        <div class="desc">LOST</div>
+    </div>
+
+    <div class="gallery">
+        <a href="">
+            <img src="/images/4.jpg" alt="">
+        </a>
+        <div class="desc">FORGOTTEN</div>
+    </div>
+    <div class="gallery">
+        <a href="">
+            <img src="/images/5.jpg" alt="">
+        </a>
+        <div class="desc">DANGER</div>
+    </div>
+
+    <button>Hide images</button>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("img").fadeOut(3000);
+            });
+
+            $(".desc").click(function () {
+                $("img").show();
+
+            });
+
+            $("img").hover(function () {
+                $(this).css("transform", "scale(1.5)");
+            },
+                function () {
+                    $(this).css("transform", "scale(1)");
+                });
+
+            $("p").click(function () {
+                $("p").css("color", "gray").slideUp(5000).slideDown(2000);
+                /* $(this).animate({
+                    left: "100",
+                    height: "toggle",
+                    opacity: "toggle"
+                }, "slow"); */
+            });
+            $("h1").click(function () {
+                $(this).animate({
+                    letterSpacing: "7px"
+                }, 5000);
+                
+            });
+
+            $("h1").click(function () {
+                $(span).animate({
+        
+                });
+            })
+
+        });
+
+
+    </script>
+
+</body>
+
+</html>
